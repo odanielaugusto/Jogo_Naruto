@@ -69,6 +69,9 @@ export default class Tela1 extends Phaser.Scene {
 
         // Criação do placar
         this.placar = this.add.text(50, 50, 'Shuriken:' + this.pontuacoes[0], { fontSize: '45px', fill: '#ffff' });
+        
+        //Criação da mensagem que diz o objetivo do jogo
+        this.add.text(50, 100, 'Objetivo: coletar 15 shurikens', { fontSize: '18px', fill: '#ffff' });
 
         // Adição da interação ao coletar a shuriken
         this.physics.add.overlap(this.personagem, this.shuriken, () => {
