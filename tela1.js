@@ -17,6 +17,7 @@ export default class Tela1 extends Phaser.Scene {
         this.load.image('plataforma', 'assets/areia3.png');
         this.load.image('ground', 'assets/areia4.png');
         this.load.image('shuriken', 'assets/shuriken2.png');
+        this.load.audio('musicaFundo', 'assets/Rap do Rock Lee (Naruto) - A FORÇA DA MOTIVAÇÃO _ NERD HITS_XwAzVXBjvNo.mp3');
     
     }
 
@@ -29,6 +30,10 @@ export default class Tela1 extends Phaser.Scene {
         // Inicialização da pontuação
         this.pontuacoes = [0, 0]
 
+        //Adicionando música de fundo
+        this.musica = this.sound.add('musicaFundo', { volume: 0.5, loop: true });
+        this.musica.play();
+        
         // Adiciona imagem de fundo
         this.add.image(larguraJogo / 2, alturaJogo / 2, 'aldeia');
 
