@@ -136,7 +136,8 @@ export default class Tela1 extends Phaser.Scene {
 
     update() {
 
-        
+
+        //Condicionais para a finalização da cena ao atingir uma pontuação igual a 15
         if( this.pontuacoes[0] === 15){
             this.musica.stop();
             this.scene.start('start')
