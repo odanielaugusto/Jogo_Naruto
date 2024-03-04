@@ -73,6 +73,12 @@ export default class Tela1 extends Phaser.Scene {
         //Criação da mensagem que diz o objetivo do jogo
         this.add.text(50, 100, 'Objetivo: coletar 15 shurikens', { fontSize: '18px', fill: '#ffff' });
 
+        //Criação da mensagem: Controles do jogo
+        this.add.text(50, 150, 'Controles do jogo: ', { fontSize: '32px', fill: '#ffff' });
+        this.add.text(50, 200,  ' ←  ↑  → ',  { fontSize: '48px', fill: '#ffff' });
+
+
+
         // Adição da interação ao coletar a shuriken
         this.physics.add.overlap(this.personagem, this.shuriken, () => {
             this.shuriken.setVisible(false);
