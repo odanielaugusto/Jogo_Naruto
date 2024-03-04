@@ -17,6 +17,7 @@ export default class Tela1 extends Phaser.Scene {
         this.load.image('plataforma', 'assets/areia3.png');
         this.load.image('ground', 'assets/areia4.png');
         this.load.image('shuriken', 'assets/shuriken2.png');
+    
     }
 
     create() {

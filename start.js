@@ -10,7 +10,7 @@ export default class Start extends Phaser.Scene {
     preload() {
 
         // Carrega imagens necessárias para a cena
-        this.load.image('start_game', './assets/bemvindo2.png');
+        this.load.image('start_game', './assets/Game_Start.png');
         this.load.image('botao', './assets/botaog.jpg');
     }
 
