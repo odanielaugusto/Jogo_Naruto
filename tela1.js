@@ -33,7 +33,7 @@ export default class Tela1 extends Phaser.Scene {
         //Adicionando música de fundo
         this.musica = this.sound.add('musicaFundo', { volume: 0.5, loop: true });
         this.musica.play();
-        
+
         // Adiciona imagem de fundo
         this.add.image(larguraJogo / 2, alturaJogo / 2, 'aldeia');
 
@@ -138,7 +138,9 @@ export default class Tela1 extends Phaser.Scene {
 
         
         if( this.pontuacoes[0] === 15){
+            this.musica.stop();
             this.scene.start('start')
+
         }
 
         // Lógica de movimentação do personagem com base nas teclas pressionadas
